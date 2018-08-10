@@ -1,0 +1,14 @@
+{
+  "name": "Project-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nneighbo/Project-2.git",
+  "author": "Noah <noah@gangplankhq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "handlebars": "^4.0.11",
+    "mysql2": "^1.6.1",
+    "sequelize": "^4.38.0"
+  }
+}
