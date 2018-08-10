@@ -1,10 +1,13 @@
 {
   "name": "Project-2",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "repository": "https://github.com/nneighbo/Project-2.git",
   "author": "Noah <noah@gangplankhq.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "express": "^4.16.3",
     "handlebars": "^4.0.11",
