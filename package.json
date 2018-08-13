@@ -14,6 +14,7 @@
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.11",
     "mysql2": "^1.6.1",
+    "plotly": "^1.0.6",
     "sequelize": "^4.38.0"
   }
 }
