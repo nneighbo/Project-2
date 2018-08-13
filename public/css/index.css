@@ -1,3 +1,125 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Sans', Arial, Helvetica, sans-serif;
+}
+
 body {
     background-color: #25282F;
+}
+
+.container {
+    min-height: 100vh;
+    margin-bottom: -50px;
+}
+
+footer,
+.push {
+    height: 50px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #42465A;
+    border-top: 1px solid #42465A;
+}
+
+footer p {
+    padding: 0;
+    height: 12px;
+}
+
+#pageHeadRow {
+    height: 80px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #42465A;
+}
+
+#pageHeadRow h1 {
+    color: #ebecf9;
+    font-size: 34px;
+    font-weight: 300;
+    font-weight: lighter;
+}
+
+#navDropDown {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    color: #d7d7d7;
+}
+
+#navDropDown p {
+    padding: 0;
+    font-size: 14px;
+    height: 12px;
+}
+
+#navDropDown:hover {
+    cursor: pointer;
+    background-color: rgb(45, 49, 58);
+}
+
+.stock {
+    border-radius: 5px;
+    height: 220px;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.10) 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.10) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.10) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#0d000000', GradientType=0);
+    background-color: #43ABF0;
+    
+}
+
+#stocks {
+    padding: 25px 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+#myChart {
+    height: 300px;
+}
+
+#smallerStocks {
+    display: flex;
+    flex-direction: row;
+}
+
+.smallerStock {
+    background-color: green;
+    height: 300px;
+    width: 300px;
+}
+
+.stockHead {
+    color: #ffffff;
+    padding: 10px 0 0 15px;
+    margin: 0;
+}
+
+.stockSub {
+    color: rgb(255, 255, 255, 0.75);
+    margin: 0;
+    padding: 0px 0 0 15px;
+    font-size: 10px;
+
+}
+
+.stockDivider {
+    height: 1px;
+    margin-top: 5px;
+    width: 100%;
+    background-color: rgb(0,0,0,0.05);
 }
