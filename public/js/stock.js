@@ -33,7 +33,14 @@ axios.get(apiURL + stock + apiURL2).then(function(res){
    $("#test-content").prepend(perc);
    $("#test-content").prepend(cap);
    $("#test-content").prepend(logo);
-
+   var sum = 0;
+    for(var i = 0; i < res.data.chart.length; i++){
+        sum += parseInt(res.data.chart[i].close, 10);
+        console.log(res.data.chart[i].close)
+    }
+    var average = sum/res.data.chart.length;
+    console.log(res.data.chart[1])
+    console.log(res.data.chart[2])
 }).catch(function(err){
     console.log(err)
 });
