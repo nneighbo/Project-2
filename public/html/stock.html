@@ -12,8 +12,9 @@
     
     <link rel="stylesheet" href="../css/initial.css">
     <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/stock.css">
     <link rel="stylesheet" href="../css/footer.css">
+
 </head>
 
 <body>
@@ -42,7 +43,9 @@
             </div>
             <div class="col-md-9 pl-5">
                 <div id="pageHeadRow" class="row">
-                    <h1>Search Page</h1>
+                    <h1>
+                        <span id="stockName">Ford Motor Company</span>
+                    </h1>
                     <div id="navDropDown">
                         <p>Log in or Register</p>
                     </div>
@@ -57,36 +60,36 @@
                 </div>
                 <div class="stocks">
                     <div class="stock">
-                        <p class="stockHead">Ford Motor Company</p>
-                        <p class="stockSub">NRES: F</p>
+                        <div id="stockHeader">
+                            <p class="stockHead">NRES: F</p>
+                            <p id="#upDown"><i id="#upDownIcon" class="material-icons">arrow_upward</i> Up by $3.21</p>
+                        </div>
                         <div class="stockDivider"></div>
                         <div>
                             <canvas id="bigChart" width="500" height="135"></canvas>
+                        </div>
+                    </div>
+                    <div id="stockInfo">
+                        <p>Open: <span id="stockOpen"></span></p>
+                        <p>High: <span id="stockHigh"></span></p>
+                        <p>Low: <span id="stockLow"></span></p>
+                    </div>
+                    <div id="stockFrame" class="row">
+                        <div class="col-sm-3 stockToggle" data-toggle="day">
+                            <p>DAY</p>
+                        </div>
+                        <div class="col-sm-3 stockToggle" data-toggle="week">
+                            <p>WEEK</p>
+                        </div>
+                        <div class="col-sm-3 stockToggle" data-toggle="month">
+                            <p>MONTH</p>
+                        </div>
+                        <div class="col-sm-3 stockToggle" data-toggle="year">
+                            <p>YEAR</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="stocks">
-                    <div class="stock">
-                        <p class="stockHead">Ford Motor Company</p>
-                        <p class="stockSub">NRES: F</p>
-                        <div class="stockDivider"></div>
-                        <div>
-                            <canvas id="bigChart" width="500" height="135"></canvas>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="stocks">
-                    <div class="stock">
-                        <p class="stockHead">Ford Motor Company</p>
-                        <p class="stockSub">NRES: F</p>
-                        <div class="stockDivider"></div>
-                        <div>
-                            <canvas id="bigChart" width="500" height="135"></canvas>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="push"></div>

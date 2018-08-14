@@ -1,0 +1,97 @@
+.stock {
+    border-radius: 5px;
+    overflow: hidden;
+    /* height: 220px; */
+}
+
+#stockHeader {
+    padding: 5px 5px 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#stockHeader p {
+    color: #2d2d2d;
+    padding: 10px 15px 10px 15px;
+    margin: 0;
+}
+
+.stocks {
+    border: 1px solid rgb(80, 104, 224);
+    /* padding: 25px 25px; */
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    /* min-height: 300px; */
+    display: flex;
+    flex-direction: column;
+    background-color: #eef2f7;
+}
+
+
+.stocks h1 {
+    color: #52525e;
+    font-size: 26px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1)
+}
+
+#stockInfo {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#stockInfo p, #stockInfo span {
+    font-size: 12px;
+    color: #787888;
+
+}
+
+.stockHead {
+    color: #2d2d2d;
+    padding: 10px 0 0 15px;
+    margin: 0;
+}
+
+.stockSub {
+    color: rgba(0, 0, 0, 0.75);
+    margin: 0;
+    padding: 0px 0 0 15px;
+    font-size: 10px;
+}
+
+.stockDivider {
+    height: 1px;
+    margin-top: 5px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.05);
+}
+
+#stockFrame {
+    border-top: 1px solid #ebebeb;
+
+}
+
+#stockFrame div {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#stockFrame div p {
+    color: #686874;
+    margin: 0;
+    padding: 10px;
+}
+
+#stockFrame div:hover {
+    cursor: pointer;
+    background-color: rgb(220, 225, 233);
+}

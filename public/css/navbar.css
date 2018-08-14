@@ -1,0 +1,130 @@
+#logIn {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 0 5px;
+    flex-direction: column;
+    position: absolute;
+    padding: 20px;
+    background-color: #25282F;
+    width: 300px;
+    height: 200px;
+    right: 0;
+}
+
+#logIn form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#logIn form input {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    background-color: #ffffff;
+    outline: none;
+}
+
+
+#pageHeadRow {
+    height: 80px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pageHeadRow h1 {
+    color: #d7d7d7;
+    font-size: 34px;
+    padding-left: 15px;
+    font-weight: 300;
+    font-weight: lighter;
+}
+
+#navDropDown {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    color: #d7d7d7;
+}
+
+#navDropDown p {
+    padding: 0;
+    font-size: 14px;
+    height: 12px;
+}
+
+#navDropDown:hover {
+    cursor: pointer;
+    background-color: rgb(45, 49, 58);
+}
+
+
+.navMenuHeader,
+a {
+    color: #42465A;
+    font-family: 'Open Sans', 'Sans', Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #d7d7d7;
+    font-family: 'Open Sans', 'Sans', Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+    color: #d7d7d7;
+}
+
+.active {
+    background-color: #1F242B !important;
+}
+
+.nav-link {
+    border: 1px solid #25282F;
+    color: #d7d7d7;
+}
+
+.nav-link:hover {
+    border: 1px solid #42465A;
+}
+
+#sidebar {
+    padding: 25px 20px 20px 20px;
+}
+
+#searchButton {
+    background: #42465A;
+}
+
+#searchBorder {
+    background: #42465A;
+    border: none;
+}
+
+
+.form-control {
+    background: #42465A;
+    border: #42465A;
+}
+
+.form-control:focus {
+    background: #42465A;
+    border: #42465A;
+    color: #d7d7d7;
+}
+
+
+.navMenuHeader {
+    margin-top: 30px;
+    padding-left: 15px;
+}
+
+.navMenuHeader p {
+    opacity: 0.2;
+}
