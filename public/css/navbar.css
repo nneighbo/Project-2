@@ -128,3 +128,25 @@ a:hover {
 .navMenuHeader p {
     opacity: 0.2;
 }
+
+#sidebar {
+    padding: 25px 20px 20px 20px;
+    position: fixed;
+    width: 190px;
+}
+
+#stockSide {
+    position: relative;
+    left: 190px;
+}
+
+#searchButton {
+    background: #42465A;
+    border-bottom-right-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+#navSearchButton {
+    border: none;
+    background: #42465A;
+}
