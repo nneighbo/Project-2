@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Sans', Arial, Helvetica, sans-serif;
+}
+
+p,
+h1 {
+    color: #d7d7d7;
+}
+
+body {
+    background-color: #25282F;
+}
+
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.container {
+    min-height: 100vh;
+    margin-bottom: -50px;
+}
