@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="../css/initial.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/index.css">
@@ -55,62 +55,62 @@
                     <a id="logoutLink" href="/logout">Logout</a>
                 </div>
                 <div id="stocks">
-                    <h1>High Stocks</h1>
+                    <h1>High Stocks (up to 24 hours of delay)</h1>
                     <div class="highStocks">
                         <div class="stock">
-                            <p class="stockHead">Ford Motor Company</p>
-                            <p class="stockSub">NRES: F</p>
+                            <p class="stockHead topOneHead"></p>
+                            <p class="stockSub topOneSub"></p>
                             <div class="stockDivider"></div>
                             <div>
-                                <canvas id="bigChart" width="500" height="135"></canvas>
+                                <canvas id="topThreeOne" width="500" height="135"></canvas>
                             </div>
                         </div>
 
                         <div class="stock">
-                            <p class="stockHead">Ford Motor Company</p>
-                            <p class="stockSub">NRES: F</p>
+                            <p class="stockHead topTwoHead"></p>
+                            <p class="stockSub topTwoSub"></p>
                             <div class="stockDivider"></div>
                             <div>
-                                <canvas id="bigChart" width="500" height="135"></canvas>
+                                <canvas id="topThreeTwo" width="500" height="135"></canvas>
                             </div>
                         </div>
 
                         <div class="stock">
-                            <p class="stockHead">Ford Motor Company</p>
-                            <p class="stockSub">NRES: F</p>
+                            <p class="stockHead topThreeHead"></p>
+                            <p class="stockSub topThreeSub"></p>
                             <div class="stockDivider"></div>
                             <div>
-                                <canvas id="bigChart" width="500" height="135"></canvas>
+                                <canvas id="topThreeThree" width="500" height="135"></canvas>
                             </div>
                         </div>
                     </div>
 
-                    <h1>Low Stocks</h1>
+                    <h1>Low Stocks (up to 24 hours of delay)</h1>
                     <div id="lowStocks">
                         <div class="stock">
-                            <p class="stockHead">Ford Motor Company</p>
-                            <p class="stockSub">NRES: F</p>
+                            <p class="stockHead botOneHead"></p>
+                            <p class="stockSub botOneSub"></p>
                             <div class="stockDivider"></div>
                             <div>
-                                <canvas id="bigChart" width="500" height="135"></canvas>
+                                <canvas id="botThreeOne" width="500" height="135"></canvas>
                             </div>
                         </div>
 
                         <div class="stock">
-                            <p class="stockHead">Ford Motor Company</p>
-                            <p class="stockSub">NRES: F</p>
+                            <p class="stockHead botTwoHead"></p>
+                            <p class="stockSub botTwoSub"></p>
                             <div class="stockDivider"></div>
                             <div>
-                                <canvas id="bigChart" width="500" height="135"></canvas>
+                                <canvas id="botThreeTwo" width="500" height="135"></canvas>
                             </div>
                         </div>
 
                         <div class="stock">
-                            <p class="stockHead">Ford Motor Company</p>
-                            <p class="stockSub">NRES: F</p>
+                            <p class="stockHead botThreeHead"></p>
+                            <p class="stockSub botThreeSub"></p>
                             <div class="stockDivider"></div>
                             <div>
-                                <canvas id="bigChart" width="500" height="135"></canvas>
+                                <canvas id="botThreeThree" width="500" height="135"></canvas>
                             </div>
                         </div>
                     </div>
