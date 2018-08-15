@@ -1,4 +1,5 @@
 #logIn {
+    overflow: hidden;
     display: none;
     align-items: center;
     justify-content: space-between;
@@ -8,26 +9,20 @@
     padding: 20px;
     background-color: #25282F;
     width: 300px;
-    height: 200px;
     right: 0;
 }
 
-#logIn form {
+#logIn div {
+    overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
 }
 
-#logIn form input {
-    margin-bottom: 10px;
-    border-radius: 5px;
-    padding: 5px;
-    border: none;
-    background-color: #ffffff;
-    outline: none;
+#logIn div a {
+    padding-bottom: 10px;
 }
-
 
 #pageHeadRow {
     height: 80px;
