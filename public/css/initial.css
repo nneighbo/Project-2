@@ -12,6 +12,20 @@ body {
     background-color: #25282F;
 }
 
+*:active {
+    outline: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+/* !important used here to override Bootstrap */
+
+*:focus {
+    border-color: inherit !important;
+    box-shadow: none !important;
+}
+
+/* ------------------------------------------ */
 
 .material-icons {
     font-family: 'Material Icons';
@@ -39,4 +53,9 @@ body {
 .container {
     min-height: 100vh;
     margin-bottom: -50px;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
 }
