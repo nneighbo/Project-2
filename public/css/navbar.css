@@ -81,10 +81,6 @@ a:hover {
     color: #d7d7d7;
 }
 
-.active {
-    background-color: #1F242B !important;
-}
-
 .nav-link {
     border: 1px solid #25282F;
     color: #d7d7d7;
@@ -94,8 +90,9 @@ a:hover {
     border: 1px solid #42465A;
 }
 
-#sidebar {
-    padding: 25px 20px 20px 20px;
+#sideContainer {
+    position: sticky;
+    top:30px;
 }
 
 #searchButton {
@@ -129,16 +126,9 @@ a:hover {
     opacity: 0.2;
 }
 
-#sidebar {
-    padding: 25px 20px 20px 20px;
-    position: fixed;
-    width: 190px;
-}
-
-#stockSide {
+/* #stockSide {
     position: relative;
-    left: 190px;
-}
+} */
 
 #searchButton {
     background: #42465A;
@@ -149,4 +139,24 @@ a:hover {
 #navSearchButton {
     border: none;
     background: #42465A;
+}
+
+.nav-active {
+    background-color: #1F242B;
+}
+
+.nav-active:hover {
+    cursor: auto;
+    border: 1px solid #25282F;
+}
+
+
+@media only screen and (max-width: 1050px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 479px) {
 }
