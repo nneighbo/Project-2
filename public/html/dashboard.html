@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    
+
     <link rel="stylesheet" href="../css/initial.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/dashboard.css">
@@ -20,27 +20,27 @@
     <div class="container-fluid">
         <div class="row px-5 pt-2">
             <div class="col-sm-2"></div>
-                <div class="col-sm-2">
-                        <div id="sideContainer">
-                            <div class="input-group mb-3" id="searchBar">
-                                <input type="text" class="form-control" placeholder="Search" autocomplete="none">
-                                <div class="input-group-append" id="searchButton">
-                                    <button id="navSearchButton" class="btn btn-outline-secondary" type="button" id="searchBorder">
-                                        <i class="material-icons">search</i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="navMenuHeader">
-                                <p>PAGES</p>
-                            </div>
-        
-                            <div class="nav flex-column nav-pills">
-                                <a class="nav-link" href="/">Current Stocks</a>
-                                <a class="nav-link" href="/news">News Articles</a>
-                                <a class="nav-link nav-active" href="/dashboard">My Dashboard</a>
-                            </div>
+            <div class="col-sm-2">
+                <div id="sideContainer">
+                    <div class="input-group mb-3" id="searchBar">
+                        <input type="text" class="form-control" placeholder="Search" autocomplete="none">
+                        <div class="input-group-append" id="searchButton">
+                            <button id="navSearchButton" class="btn btn-outline-secondary" type="button" id="searchBorder">
+                                <i class="material-icons">search</i>
+                            </button>
                         </div>
                     </div>
+                    <div class="navMenuHeader">
+                        <p>PAGES</p>
+                    </div>
+
+                    <div class="nav flex-column nav-pills">
+                        <a class="nav-link" href="/">Current Stocks</a>
+                        <a class="nav-link" href="/news">News Articles</a>
+                        <a class="nav-link nav-active" href="/dashboard">My Dashboard</a>
+                    </div>
+                </div>
+            </div>
 
             <div class="col-md-6 pl-5" id="stockSide">
                 <div id="pageHeadRow" class="row">
@@ -50,9 +50,11 @@
                     </div>
                 </div>
                 <div id="logIn">
-                    <a id="loginLink" href="/login">Login</a>
-                    <a id="createAccountLink" href="/createAccount">Create Account</a>
-                    <a id="logoutLink" href="/logout">Logout</a>
+                    <div>
+                        <a id="loginLink" href="/login">Login</a>
+                        <a id="createAccountLink" href="/createAccount">Create Account</a>
+                        <a id="logoutLink" href="/logout">Logout</a>
+                    </div>
                 </div>
                 <div class="stocks">
                     <div class="stock">
