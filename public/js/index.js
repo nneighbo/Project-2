@@ -298,60 +298,12 @@ function addData(graph, label, data) {
 }
 
 
-$(document).ready(function () {
-    // Get the height of contact 
-    //  var contactHeight = $("#contact").height();
-    //  $("#contact").css("height", "0px");
-    //  $("#contact").show();
-
-    //  $("#contactLink").on("click", function () {
-    //      if ($("#contact").height() === contactHeight) {
-    //          $("#contact").animate({
-    //              height: 0
-    //          }, 200)
-    //      } else if ($("#contact").height() === 0) {
-    //          $("#contact").animate({
-    //              height: contactHeight
-    //          }, 200);
-    //      }
-    //  });
-
-    $("#navDropDown").on("click", function () {
-        var logIn = $("#logIn");
-        logIn.css("height", "0px");
-        if (logIn.css("display") === "none") {
-            logIn.css("display", "flex");
-            logIn.animate({
-                height: 200
-            });
-        } else if (logIn.css("display") === "flex") {
-            logIn.animate({
-                height: 0
-            });
-            logIn.css("display", "none");
-        }
-    })
-})
 // $( document ).ready(function() {
 //     $("#loginLink").show()
 //     $("#createAccountLink").show()
 //     $("#logoutLink").show()
 // });
-$("#searchLogo").on("click", function () {
-    window.location.replace("/search")
-})
 
-$("#v-pills-profile-tab").on("click", function () {
-    window.location.replace("/news")
-})
-
-$("#v-pills-home-tab").on("click", function () {
-    window.location.replace("/")
-})
-
-$("#v-pills-messages-tab").on("click", function () {
-    window.location.replace("/dashboard")
-})
 
 $.get("/api/user_data", function (data) {
     if (data.email === undefined) {
