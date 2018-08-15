@@ -1,0 +1,21 @@
+footer,
+.push {
+    height: 50px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #42465A;
+    border-top: 1px solid #42465A;
+}
+
+footer p {
+    padding: 0;
+    height: 12px;
+}
+
+footer p {
+    opacity: 0.2;
+}

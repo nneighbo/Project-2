@@ -9,11 +9,12 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    
+      
     <link rel="stylesheet" href="../css/initial.css">
     <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/createAccount.css">
     <link rel="stylesheet" href="../css/footer.css">
+
 </head>
 
 <body>
@@ -24,7 +25,7 @@
                     <input type="text" class="form-control" placeholder="Search">
                     <div class="input-group-append" id="searchButton">
                         <button id="navSearchButton" class="btn btn-outline-secondary" type="button" id="searchBorder">
-                            <i class="material-icons" id="searchLogo">search</i>
+                            <i class="material-icons">search</i>
                         </button>
                     </div>
                 </div>
@@ -42,48 +43,17 @@
             </div>
             <div class="col-md-9 pl-5" id="stockSide">
                 <div id="pageHeadRow" class="row">
-                    <h1>My Dashboard</h1>
-                    <div id="navDropDown">
-                        <p>Log in or Register</p>
-                    </div>
-                </div>
-                <div id="logIn">
-                    <a id="loginLink" href="/login">Login</a>
-                    <a id="createAccountLink" href="/createAccount">Create Account</a>
-                    <a id="logoutLink" href="/logout">Logout</a>
+                    <h1>Login</h1>
                 </div>
                 <div class="stocks">
-                    <div class="stock">
-                        <p class="stockHead">Ford Motor Company</p>
-                        <p class="stockSub">NRES: F</p>
-                        <div class="stockDivider"></div>
-                        <div>
-                            <canvas id="bigChart" width="500" height="135"></canvas>
-                        </div>
+                    <div id="registerField">
+                        <form class = "login" action="post">
+                            <input type="text" id = "email-input" placeholder="Email">
+                            <input type="password" id = "password-input" placeholder="Password">
+                            <button class="btn btn-secondary" type="submit">Login</button>
+                        </form>
                     </div>
                 </div>
-
-                <!-- <div class="stocks">
-                    <div class="stock">
-                        <p class="stockHead">Ford Motor Company</p>
-                        <p class="stockSub">NRES: F</p>
-                        <div class="stockDivider"></div>
-                        <div>
-                            <canvas id="bigChart" width="500" height="135"></canvas>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="stocks">
-                    <div class="stock">
-                        <p class="stockHead">Ford Motor Company</p>
-                        <p class="stockSub">NRES: F</p>
-                        <div class="stockDivider"></div>
-                        <div>
-                            <canvas id="bigChart" width="500" height="135"></canvas>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
         <div class="push"></div>
@@ -102,8 +72,7 @@
         crossorigin="anonymous"></script>
     <script src="../js/navbar.js"></script>
     <script src="../js/stock.js"></script>
-    <script src="../js/dashboard.js"></script>
-
+    <script src="../js/login.js"></script>
 
 </body>
 

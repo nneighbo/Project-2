@@ -1,0 +1,27 @@
+.newsArticle {
+    padding: 25px 25px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    /* min-height: 300px; */
+    display: flex;
+    flex-direction: column;
+    background-color: #eef2f7;
+}
+
+.newsArticle:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.newsArticle h1 {
+    color: #52525e;
+    font-size: 26px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1)
+}
+
+.newsArticle p {
+    color: #52525e;
+}
