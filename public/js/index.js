@@ -109,7 +109,7 @@ function runTopGraph() {
         for (i = 0; i < chart.length; i++) {
             addData(topThreeOne, days1[i], chartArr1[i]);
         }
-        console.log("one",topThreeOne.data.datasets)
+        console.log("one", topThreeOne.data.datasets)
     }).catch(function (error) {
         if (error) throw error
     });
@@ -142,7 +142,7 @@ function runTopGraph() {
         for (i = 0; i < chart.length; i++) {
             addData(topThreeTwo, days[i], chartArr[i]);
         }
-        console.log("two",topThreeTwo.data.datasets)
+        console.log("two", topThreeTwo.data.datasets)
     }).catch(function (error) {
         if (error) throw error;
     });
@@ -174,7 +174,7 @@ function runTopGraph() {
         for (i = 0; i < chart.length; i++) {
             addData(topThreeThree, days[i], chartArr[i]);
         }
-        console.log("three",topThreeThree.data.datasets)
+        console.log("three", topThreeThree.data.datasets)
     }).catch(function (error) {
         if (error) throw error
     });
@@ -276,12 +276,12 @@ function runBotGraph() {
 }
 
 function addData(graph, label, data) {
-    graph.data.labels.push(label);  
+    graph.data.labels.push(label);
     console.log("data data", data)
     graph.data.datasets[0].data.push(data);
     console.log(graph + " data: " + graph.data.datasets[0].data)
     console.log(graph + "date:" + graph.data.labels)
-    
+
     graph.update();
 
     if (graph.data.datasets[0].data.length === 5) {
@@ -290,7 +290,7 @@ function addData(graph, label, data) {
     if (graph.data.labels.length === 5) {
         graph.data.labels = [];
     }
-    
+
     // graph.data.datasets.forEach((dataset) => {
 
     //     dataset.data.push(data);
@@ -337,28 +337,28 @@ $(document).ready(function () {
 //     $("#createAccountLink").show()
 //     $("#logoutLink").show()
 // });
-$("#searchLogo").on("click",function(){
+$("#searchLogo").on("click", function () {
     window.location.replace("/search")
 })
 
-$("#v-pills-profile-tab").on("click",function(){
+$("#v-pills-profile-tab").on("click", function () {
     window.location.replace("/news")
 })
 
-$("#v-pills-home-tab").on("click",function(){
+$("#v-pills-home-tab").on("click", function () {
     window.location.replace("/")
 })
 
-$("#v-pills-messages-tab").on("click",function(){
+$("#v-pills-messages-tab").on("click", function () {
     window.location.replace("/dashboard")
 })
 
-$.get("/api/user_data",function(data){
-    if(data.email===undefined){
+$.get("/api/user_data", function (data) {
+    if (data.email === undefined) {
         $("#loginLink").show()
         $("#createAccountLink").show()
         $("#logoutLink").hide()
-    }else{
+    } else {
         $("#loginLink").hide()
         $("#createAccountLink").hide()
         $("#logoutLink").show()
