@@ -298,13 +298,6 @@ function addData(graph, label, data) {
 }
 
 
-// $( document ).ready(function() {
-//     $("#loginLink").show()
-//     $("#createAccountLink").show()
-//     $("#logoutLink").show()
-// });
-
-
 $.get("/api/user_data", function (data) {
     if (data.email === undefined) {
         $("#loginLink").show()
