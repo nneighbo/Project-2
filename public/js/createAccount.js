@@ -45,9 +45,8 @@ $(document).ready(function() {
         email: email,
         password: password
       }).then(function(data) {
-          alert("working")
           console.log("Data: " + data)
-        window.location.replace(data);
+        window.location.replace("/dashboard");
         // If there's an error, handle it by throwing up a boostrap alert
       }).catch(handleLoginErr);
     }
