@@ -4,6 +4,12 @@
     "password": "root",
     "database": "password_test",
     "host": "127.0.0.1",
+    "port": 3306,
+    "dialectOptions": {
+      "socketPath": "/Applications/MAMP/tmp/mysql/mysql.sock",
+      "supportBigNumbers": true,
+      "bigNumberStrings": true
+    },
     "dialect": "mysql"
   },
   "test": {

@@ -28,6 +28,7 @@ app.set("view engine", "handlebars");
 
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
+require("./routes/profile.js")(app);
 require("./routes/axios.js")(axios);
 
 db.sequelize.sync().then(function() {

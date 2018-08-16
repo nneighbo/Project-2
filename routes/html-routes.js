@@ -5,7 +5,7 @@ module.exports = function(app){
     
     app.get("/", function(req, res) {
         // res.sendFile(path.join(__dirname, "../public/html/index.html"));
-        res.render("index");
+        res.render("index",{});
       });
 
       app.get("/createAccount", function(req, res) {
