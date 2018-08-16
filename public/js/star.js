@@ -3,6 +3,7 @@ $(document).ready(() => {
     $(".star").on("click", function () {
         var obj = $(this);
         var toggle = obj.data("toggle");
+        
 
         if (toggle === "unselected") {
             obj.data("toggle", "selected");
