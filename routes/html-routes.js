@@ -28,9 +28,9 @@ module.exports = function(app){
         res.render("search");
       });
 
-    app.get("/dashboard", isAuthenticated, function(req, res) {
-        // res.sendFile(path.join(__dirname, "../public/html/dashboard.html"));
-        res.render("dashboard");
-      });
+    // app.get("/dashboard", isAuthenticated, function(req, res) {
+    //     // res.sendFile(path.join(__dirname, "../public/html/dashboard.html"));
+    //     res.render("dashboard");
+    //   });
 };
 

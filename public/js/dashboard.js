@@ -1,3 +1,4 @@
+
 $.get("/api/user_data",function(data){
     if(data.email===undefined){
         $("#loginLink").show()
@@ -63,8 +64,8 @@ function getUsers(user) {
                 url: queryURL,
                 method: "GET"
             }).then(function(res){
-                $(".stockHead").append("<br>" + res.quote.companyName + "<br>" + "<strong>Symbol</strong> " + res.quote.symbol + " " + "<strong>Price</strong> " + " " + res.quote.iexRealtimePrice + " " + "<strong>Change</strong> " + res.quote.change + " " + "<strong>Last 52 High</strong> " + res.quote.week52High + " " + "<strong>Last 52 Low</strong> " + res.quote.week52Low + "<br><hr>")
-                console.log(res)
+
+                
             })
          }
     

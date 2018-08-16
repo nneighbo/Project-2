@@ -31,6 +31,10 @@ require("./routes/api-routes.js")(app);
 require("./routes/profile.js")(app);
 require("./routes/axios.js")(axios);
 
+var routes = require("./controllers/profileController.js");
+
+app.use(routes)
+
 db.sequelize.sync().then(function() {
     app.listen(PORT, function() {
       console.log("App listening on PORT " + PORT);

@@ -1,12 +1,12 @@
 <div class="container-fluid">
-    <div class="row px-md-5 pt-2">
-        <div class="col-lg-2 col-md-0"></div>
-        <div class="col-lg-2 col-md-4">
+    <div class="row px-5 pt-2">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2">
             <div id="sideContainer">
                 <div class="input-group mb-3" id="searchBar">
-                    <input type="text" id="searchForm" class="form-control" placeholder="Search" autocomplete="none">
+                    <input type="text" class="form-control" placeholder="Search" autocomplete="none">
                     <div class="input-group-append" id="searchButton">
-                        <a href="/search" id="navSearchButton" class="btn" id="searchBorder">
+                        <a href="/search" id="navSearchButton" class="btn btn-outline-secondary" type="button" id="searchBorder">
                             <i class="material-icons">search</i>
                         </a>
                     </div>
@@ -24,7 +24,7 @@
         </div>
         {{!-- </div> --}}
 
-    <div class="col-md-8 col-lg-6 pl-lg-5" id="stockSide">
+    <div class="col-md-6 pl-5" id="stockSide">
         <div id="pageHeadRow" class="row">
             <h1>My Dashboard</h1>
             <div id="navDropDown">
@@ -32,18 +32,23 @@
             </div>
         </div>
         <div id="logIn">
-            <div>
+            <div>   
                 <a id="loginLink" href="/login">Login</a>
                 <a id="createAccountLink" href="/createAccount">Create Account</a>
                 <a id="logoutLink" href="/logout">Logout</a>
             </div>
         </div>
+        {{#each handleProfile}}
         <div class="stockHolder">
             <div class="stock no-margin">
                 <div class="stockHeadContainer">
                     <div class="stockHeadLeft">
-                        <p class="stockHead botOneHead">Ford</p>
-                        <p class="stockSub botOneSub">NRES: F</p>
+                        <p class="stockHead botOneHead">
+                            {{companyName}}
+                        </p>
+                        <p class="stockSub botOneSub">
+                            {{symbol}} ^%{{change}}
+                        </p>
                     </div>
                     <div class="stockHeadRight">
                         <i class="material-icons star" data-toggle="unselected">star_border</i>
@@ -55,10 +60,11 @@
                 </div>
             </div>
         </div>
+        {{/each}}
     </div>
-    <div class="col-md-0 col-lg-2">
-    </div>
-    <div class="push"></div>
+    <div class="col-sm-2"></div>
+</div>
+<div class="push"></div>
 </div>
 
 <footer>
