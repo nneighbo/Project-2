@@ -1,0 +1,109 @@
+<div class="container-fluid">
+    <div class="row px-5 pt-2">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2">
+            <div id="sideContainer">
+                <div class="input-group mb-3" id="searchBar">
+                    <input type="text" class="form-control" placeholder="Search" autocomplete="none">
+                    <div class="input-group-append" id="searchButton">
+                        <button id="navSearchButton" class="btn btn-outline-secondary" type="button" id="searchBorder">
+                            <i class="material-icons">search</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="navMenuHeader">
+                    <p>PAGES</p>
+                </div>
+
+                <div class="nav flex-column nav-pills">
+                    <a class="nav-link nav-active" href="/">Current Stocks</a>
+                    <a class="nav-link" href="/news">News Articles</a>
+                    <a class="nav-link" href="/dashboard">My Dashboard</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 pl-5" id="stockSide">
+            <div id="pageHeadRow" class="row">
+                <h1>Current Stocks</h1>
+                <div id="navDropDown">
+                    <p>Log in or Register</p>
+                </div>
+            </div>
+            <div id="logIn">
+                <div>
+                    <a id="loginLink" href="/login">Login</a>
+                    <a id="createAccountLink" href="/createAccount">Create Account</a>
+                    <a id="logoutLink" href="/logout">Logout</a>
+                </div>
+            </div>
+            <div id="stocks">
+                <h1>High Stocks (up to 24 hours of delay)</h1>
+                <div class="highStocks">
+                    <div class="stock">
+                        <p class="stockHead topOneHead"></p>
+                        <p class="stockSub topOneSub"></p>
+                        <div class="stockDivider"></div>
+                        <div>
+                            <canvas id="topThreeOne"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="stock">
+                        <p class="stockHead topTwoHead"></p>
+                        <p class="stockSub topTwoSub"></p>
+                        <div class="stockDivider"></div>
+                        <div>
+                            <canvas id="topThreeTwo"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="stock">
+                        <p class="stockHead topThreeHead"></p>
+                        <p class="stockSub topThreeSub"></p>
+                        <div class="stockDivider"></div>
+                        <div>
+                            <canvas id="topThreeThree"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Low Stocks (up to 24 hours of delay)</h1>
+                <div id="lowStocks">
+                    <div class="stock">
+                        <p class="stockHead botOneHead"></p>
+                        <p class="stockSub botOneSub"></p>
+                        <div class="stockDivider"></div>
+                        <div>
+                            <canvas id="botThreeOne"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="stock">
+                        <p class="stockHead botTwoHead"></p>
+                        <p class="stockSub botTwoSub"></p>
+                        <div class="stockDivider"></div>
+                        <div>
+                            <canvas id="botThreeTwo"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="stock">
+                        <p class="stockHead botThreeHead"></p>
+                        <p class="stockSub botThreeSub"></p>
+                        <div class="stockDivider"></div>
+                        <div>
+                            <canvas id="botThreeThree"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+        </div>
+        <div class="push"></div>
+    </div>
+
+    <footer>
+        <p>Stocks and Info</p>
+    </footer>
