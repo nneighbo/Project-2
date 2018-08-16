@@ -6,9 +6,9 @@
                 <div class="input-group mb-3" id="searchBar">
                     <input type="text" class="form-control" placeholder="Search" autocomplete="none">
                     <div class="input-group-append" id="searchButton">
-                        <button id="navSearchButton" class="btn btn-outline-secondary" type="button" id="searchBorder">
+                        <a href="/search" id="navSearchButton" class="btn btn-outline-secondary" type="button" id="searchBorder">
                             <i class="material-icons">search</i>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="navMenuHeader">
@@ -22,35 +22,36 @@
                 </div>
             </div>
         </div>
+    {{!-- </div> --}}
 
-        <div class="col-md-6 pl-5" id="stockSide">
-            <div id="pageHeadRow" class="row">
-                <h1>My Dashboard</h1>
-                <div id="navDropDown">
-                    <p>Log in or Register</p>
-                </div>
+    <div class="col-md-6 pl-5" id="stockSide">
+        <div id="pageHeadRow" class="row">
+            <h1>My Dashboard</h1>
+            <div id="navDropDown">
+                <p>Log in or Register</p>
             </div>
-            <div id="logIn">
+        </div>
+        <div id="logIn">
+            <div>
+                <a id="loginLink" href="/login">Login</a>
+                <a id="createAccountLink" href="/createAccount">Create Account</a>
+                <a id="logoutLink" href="/logout">Logout</a>
+            </div>
+        </div>
+        <div class="stockHolder">
+            <div class="stock no-margin">
+                <p class="stockHead">Ford Motor Company</p>
+                <p class="stockSub">NRES: F</p>
+                <div class="stockDivider"></div>
                 <div>
-                    <a id="loginLink" href="/login">Login</a>
-                    <a id="createAccountLink" href="/createAccount">Create Account</a>
-                    <a id="logoutLink" href="/logout">Logout</a>
-                </div>
-            </div>
-            <div class="stockHolder">
-                <div class="stock no-margin">
-                    <p class="stockHead">Ford Motor Company</p>
-                    <p class="stockSub">NRES: F</p>
-                    <div class="stockDivider"></div>
-                    <div>
-                        <canvas id="bigChart" width="500" height="135"></canvas>
-                    </div>
+                    <canvas id="bigChart" width="500" height="135"></canvas>
                 </div>
             </div>
         </div>
-        <div class="col-sm-2"></div>
     </div>
-    <div class="push"></div>
+    <div class="col-sm-2"></div>
+</div>
+<div class="push"></div>
 </div>
 
 <footer>
@@ -73,3 +74,4 @@
 <script src="../js/stock.js"></script>
 <script src="../js/dashboard.js"></script>
 <script src="../js/navbar.js"></script>
+<script src="../js/search.js"></script>
