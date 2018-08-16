@@ -1,18 +1,11 @@
-$("#searchLogo").on("click",function(){
-    window.location.replace("/search")
-})
+var apiURL = "https://api.iextrading.com/1.0/stock/";
+var apiURL2 = "/batch?types=quote,logo,news,chart&range=5d";
 
-$("#v-pills-profile-tab").on("click",function(){
-    window.location.replace("/news")
-})
-
-$("#v-pills-home-tab").on("click",function(){
-    window.location.replace("/")
-})
-
-$("#v-pills-messages-tab").on("click",function(){
-    window.location.replace("/dashboard")
-})
+$("#navSearchButton").on("click", function(e){
+   console.log("working")
+   var search = $("#searchForm").val().trim()
+   localStorage.setItem("search", search);
+});
 
 $.get("/api/user_data",function(data){
     if(data.email===undefined){
