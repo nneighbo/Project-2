@@ -1,0 +1,304 @@
+.stock {
+    border-radius: 5px;
+    border: 1px solid rgb(80, 104, 224);
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 220px;
+}
+
+.stock:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#stocks {
+    padding: 25px 25px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #eef2f7;
+}
+
+#stocks h1 {
+    color: #52525e;
+    font-size: 26px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1)
+}
+
+.stock:nth-child(2) {
+    border-color: rgb(255, 147, 147);
+}
+
+.stock:nth-child(3) {
+    border-color: rgb(216, 100, 210)
+}
+
+#stocks:nth-last-child() {
+    margin-bottom: 0;
+}
+
+#smallerStocks {
+    display: flex;
+    flex-direction: row;
+}
+
+.smallerStock {
+    background-color: green;
+    height: 300px;
+    width: 300px;
+}
+
+.stockHead {
+    color: #2d2d2d;
+    padding: 10px 0 0 15px;
+    margin: 0;
+}
+
+.stockSub {
+    color: rgba(0, 0, 0, 0.75);
+    margin: 0;
+    padding: 0px 0 0 15px;
+    font-size: 10px;
+}
+
+.stockDivider {
+    height: 1px;
+    margin-top: 5px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.05);
+}
+
+/* --- News page specific css --- */
+
+.newsArticle {
+    padding: 25px 25px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    /* min-height: 300px; */
+    display: flex;
+    flex-direction: column;
+    background-color: #eef2f7;
+}
+
+.newsArticle:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.newsArticle h1 {
+    color: #52525e;
+    font-size: 24px;
+}
+
+.newsArticle h6 {
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #676772;
+}
+
+.newsArticle p {
+    color: #52525e;
+}
+
+/* ------------------------------ */
+
+/* Single Stock css */
+
+.singleStock {
+    border-radius: 5px;
+    overflow: hidden;
+    /* height: 220px; */
+}
+
+#stockHeader {
+    padding: 5px 5px 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#stockHeader p {
+    color: #2d2d2d;
+    padding: 10px 15px 10px 15px;
+    margin: 0;
+}
+
+.singleStockHolder {
+    border: 1px solid rgb(80, 104, 224);
+    /* padding: 25px 25px; */
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    /* min-height: 300px; */
+    display: flex;
+    flex-direction: column;
+    background-color: #eef2f7;
+}
+
+.singleStockHolder h1 {
+    color: #52525e;
+    font-size: 26px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1)
+}
+
+#stockInfo {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#stockInfo p,
+#stockInfo span {
+    font-size: 12px;
+    color: #787888;
+}
+
+#stockFrame {
+    border-top: 1px solid #ebebeb;
+}
+
+#stockFrame div {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#stockFrame div p {
+    color: #686874;
+    margin: 0;
+    padding: 10px;
+}
+
+#stockFrame div:hover {
+    cursor: pointer;
+    background-color: rgb(220, 225, 233);
+}
+
+/* ---------------- */
+
+/* Create Account Page */
+
+#registerField {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 0 5px;
+    flex-direction: column;
+    padding: 20px;
+    width: 300px;
+    /* height: 200px; */
+}
+
+#registerField form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#registerField form input {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    background-color: #54545e;
+    color: #ffffff;
+    outline: none;
+}
+
+.registerHolder {
+    border: 1px solid rgb(80, 104, 224);
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    /* min-height: 300px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eef2f7;
+}
+
+/* ------------------- */
+
+/* Dashboard */
+
+.stockHolder {
+    /* padding: 25px 25px; */
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    /* min-height: 300px; */
+    display: flex;
+    flex-direction: column;
+    background-color: #eef2f7;
+}
+
+.stockHolder:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.stockHolder h1 {
+    color: #52525e;
+    font-size: 26px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1)
+}
+
+.no-margin {
+    margin-bottom: auto;
+}
+
+/* --------- */
+
+/* Search Page */
+
+.stockStockHeld {
+    border-radius: 5px;
+    border: 1px solid rgb(80, 104, 224);
+    overflow: hidden;
+    height: 220px;
+}
+
+.searchStockHolder {
+    /* padding: 25px 25px; */
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    /* min-height: 300px; */
+    display: flex;
+    flex-direction: column;
+    background-color: #eef2f7;
+}
+
+.searchStockHolder:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.searchStockHolder h1 {
+    color: #52525e;
+    font-size: 26px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1)
+}
+
+/* ----------- */
