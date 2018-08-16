@@ -52,6 +52,19 @@ module.exports = function(app) {
     res.redirect("/");
   });
 
+  app.post("/api/dashboard", function(req, res){
+    db.Stock.create({
+      symbol: req.body.symbol,
+      UserId: req.body.UserId
+    })
+    // .then(function() {
+    //   res.redirect(307, "/dashboard");
+    // }).catch(function(err) {
+    //   console.log(err);
+    //   res.json(err);
+    //   // res.status(422).json(err.errors[0].message);
+    // });
+  })
   // Route for getting some data about our user to be used client side
   app.get("/api/user_data", function(req, res) {
     if (!req.user) {
