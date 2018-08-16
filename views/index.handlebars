@@ -1,12 +1,12 @@
 <div class="container-fluid">
-    <div class="row px-5 pt-2">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-2">
+    <div class="row px-md-5 pt-2">
+        <div class="col-lg-2 col-md-0"></div>
+        <div class="col-lg-2 col-md-4">
             <div id="sideContainer">
                 <div class="input-group mb-3" id="searchBar">
                     <input type="text" id="searchForm" class="form-control" placeholder="Search" autocomplete="none">
                     <div class="input-group-append" id="searchButton">
-                        <a href="/search" id="navSearchButton" class="btn btn-outline-secondary"  id="searchBorder">
+                        <a href="/search" id="navSearchButton" class="btn" id="searchBorder">
                             <i class="material-icons">search</i>
                         </a>
                     </div>
@@ -15,7 +15,7 @@
                     <p>PAGES</p>
                 </div>
 
-                <div class="nav flex-column nav-pills">
+                <div id="nav" class="nav nav-pills">
                     <a class="nav-link nav-active" href="/">Current Stocks</a>
                     <a class="nav-link" href="/news">News Articles</a>
                     <a class="nav-link" href="/dashboard">My Dashboard</a>
@@ -24,7 +24,7 @@
         </div>
 
 
-        <div class="col-md-6 pl-5" id="stockSide">
+        <div class="col-md-8 col-lg-6 pl-lg-5" id="stockSide">
             <div id="pageHeadRow" class="row">
                 <h1>Current Stocks</h1>
                 <div id="navDropDown">
@@ -48,7 +48,7 @@
                                 <p class="stockSub topOneSub"></p>
                             </div>
                             <div class="stockHeadRight">
-                                <i class="material-icons star">star_border</i>
+                                <i class="material-icons star" data-toggle="unselected">star_border</i>
                             </div>
                         </div>
                         <div class="stockDivider"></div>
@@ -142,7 +142,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-2">
+        <div class="col-md-0 col-lg-2">
         </div>
     </div>
 

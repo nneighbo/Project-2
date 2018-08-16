@@ -19,6 +19,7 @@ $(document).ready(() => {
        console.log(newStock)
         // console.log(this)
         var toggle = obj.data("toggle");
+        
 
         createStock(newStock, newid);
         console.log(obj.parent().parent().find("p").text);
