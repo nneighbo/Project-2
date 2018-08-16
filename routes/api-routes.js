@@ -30,6 +30,22 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/api/stocks", function(req, res) {
+    var query = {};
+    if (req.query.user_id) {
+      query.UserId = req.query.user_id;
+    }
+
+
+    // 1. Add a join here to include all of the Authors to these posts
+    db.Stock.findAll({
+      where: query,
+      include: [ db.User ] 
+    }).then(function(dbStock) {
+      res.json(dbStock);
+    });
+  });
+
   // Route for logging user out
   app.get("/logout", function(req, res) {
     req.logout();
