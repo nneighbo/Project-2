@@ -22,7 +22,7 @@
                 </div>
             </div>
         </div>
-    {{!-- </div> --}}
+        {{!-- </div> --}}
 
     <div class="col-md-6 pl-5" id="stockSide">
         <div id="pageHeadRow" class="row">
@@ -40,8 +40,15 @@
         </div>
         <div class="searchStockHolder">
             <div class="searchStockHeld">
-                <p class="stockHead" id="topResultHead"></p>
-                <p class="stockSub" id="topResultSub"></p>
+                <div class="stockHeadContainer">
+                    <div class="stockHeadLeft">
+                        <p class="stockHead topResultHead"></p>
+                        <p class="stockSub topResultSub"></p>
+                    </div>
+                    <div class="stockHeadRight">
+                        <i class="material-icons star" data-toggle="unselected">star_border</i>
+                    </div>
+                </div>
                 <div class="stockDivider"></div>
                 <div>
                     <canvas id="topResultChart"></canvas>
@@ -51,8 +58,15 @@
 
         <div class="searchStockHolder">
             <div class="searchStockHeld">
-                <p class="stockHead" id="secondResultHead"></p>
-                <p class="stockSub" id="secondResultSub"></p>
+                <div class="stockHeadContainer">
+                    <div class="stockHeadLeft">
+                        <p class="stockHead secondResultHead"></p>
+                        <p class="stockSub secondResultSub"></p>
+                    </div>
+                    <div class="stockHeadRight">
+                        <i class="material-icons star" data-toggle="unselected">star_border</i>
+                    </div>
+                </div>
                 <div class="stockDivider"></div>
                 <div>
                     <canvas id="secondResultChart"></canvas>
@@ -62,8 +76,15 @@
 
         <div class="searchStockHolder">
             <div class="searchStockHeld">
-                <p class="stockHead" id="thirdResultHead"></p>
-                <p class="stockSub" id="thirdResultSub"></p>
+                <div class="stockHeadContainer">
+                    <div class="stockHeadLeft">
+                        <p class="stockHead thirdesultHead"></p>
+                        <p class="stockSub thirdResultSub"></p>
+                    </div>
+                    <div class="stockHeadRight">
+                        <i class="material-icons star" data-toggle="unselected">star_border</i>
+                    </div>
+                </div>
                 <div class="stockDivider"></div>
                 <div>
                     <canvas id="thirdResultChart"></canvas>
@@ -96,4 +117,5 @@
 <script src="../js/stock.js"></script>
 <script src="../js/search.js"></script>
 <script src="../js/searchPage.js"></script>
+<script src="../js/star.js"></script>
 <script src="../js/navbar.js"></script>
