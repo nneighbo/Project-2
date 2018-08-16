@@ -5,7 +5,7 @@ module.exports = function(app){
     
     app.get("/", function(req, res) {
         // res.sendFile(path.join(__dirname, "../public/html/index.html"));
-        res.render("index");
+        res.render("index",{});
       });
 
       app.get("/createAccount", function(req, res) {
@@ -28,9 +28,9 @@ module.exports = function(app){
         res.render("search");
       });
 
-    app.get("/dashboard", isAuthenticated, function(req, res) {
-        // res.sendFile(path.join(__dirname, "../public/html/dashboard.html"));
-        res.render("dashboard");
-      });
+    // app.get("/dashboard", isAuthenticated, function(req, res) {
+    //     // res.sendFile(path.join(__dirname, "../public/html/dashboard.html"));
+    //     res.render("dashboard");
+    //   });
 };
 
