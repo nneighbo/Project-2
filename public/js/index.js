@@ -35,6 +35,7 @@ var chartConfig = {
         }]
     },
     options: {
+        maintainAspectRatio: false,
         title: {
             display: true
         },
@@ -58,9 +59,10 @@ var chartConfig = {
         },
         gridLines: {
             display: false,
-        }
+        },
     }
 };
+
 var stock = "aapl";
 var chart;
 
