@@ -1,47 +1,66 @@
 <div class="container-fluid">
-        <div class="row px-5 pt-2">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-2">
-                <div id="sideContainer">
-                    <div class="input-group mb-3" id="searchBar">
-                        <input type="text" class="form-control" placeholder="Search" autocomplete="none">
-                        <div class="input-group-append" id="searchButton">
-                            <button id="navSearchButton" class="btn btn-outline-secondary" type="button" id="searchBorder">
-                                <i class="material-icons">search</i>
-                            </button>
-                        </div>
+    <div class="row px-5 pt-2">
+        <div class="col-sm-2"></div>
+        {{!-- <div class="col-sm-2">
+            <div id="sideContainer">
+                <div class="input-group mb-3" id="searchBar">
+                    <input type="text" class="form-control" placeholder="Search" autocomplete="none">
+                    <div class="input-group-append" id="searchButton">
+                        <button id="navSearchButton" class="btn btn-outline-secondary" type="button" id="searchBorder">
+                            <i class="material-icons">search</i>
+                        </button>
                     </div>
-                    <div class="navMenuHeader">
-                        <p>PAGES</p>
-                    </div>
+                </div>
+                <div class="navMenuHeader">
+                    <p>PAGES</p>
+                </div>
 
-                    <div class="nav flex-column nav-pills">
-                        <a class="nav-link" href="/">Current Stocks</a>
-                        <a class="nav-link" href="/news">News Articles</a>
-                        <a class="nav-link" href="/dashboard">My Dashboard</a>
-                    </div>
+                <div class="nav flex-column nav-pills">
+                    <a class="nav-link" href="/">Current Stocks</a>
+                    <a class="nav-link" href="/news">News Articles</a>
+                    <a class="nav-link" href="/dashboard">My Dashboard</a>
                 </div>
             </div>
+        </div> --}}
 
-            <div class="col-md-6 pl-5" id="stockSide">
-                <div id="pageHeadRow" class="row">
-                    <h1>Register</h1>
-                </div>
-                <div class="registerHolder">
-                    <div id="registerField">
-                        <form action="post" class="signup">
-                            <input type="text" id="email-input" placeholder="Email">
-                            <input type="password" id="password-input" placeholder="Password">
-                            <button class="btn btn-secondary" type="submit" id="signup-submit"><a href="">Create Account</a></button>
-                        </form>
-                    </div>
+        <div class="col-md-8 pl-5" id="stockSide">
+            <div id="pageHeadRow" class="row">
+                <h1>Register</h1>
+            </div>
+            <div class="registerHolder">
+                <div id="registerField">
+                    <form action="post" class="signup">
+                        <input type="text" id="email-input" placeholder="Email">
+                        <input type="password" id="password-input" placeholder="Password">
+                        <button class="btn btn-secondary" type="submit" id="signup-submit">
+                            <a href="">Create Account</a>
+                        </button>
+                    </form>
                 </div>
             </div>
-            <div class="col-sm-2"></div>
         </div>
-        <div class="push"></div>
+        <div class="col-sm-2"></div>
     </div>
+    <div class="push"></div>
+</div>
 
-    <footer>
-        <p>Stocks and Info</p>
-    </footer>
+<footer>
+    <p>Stocks and Info</p>
+</footer>
+
+<!-- Chart.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<!-- Popper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<!-- Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+<!-- Page Scripts -->
+<script src="../js/stock.js"></script>
+<script src="../js/navbar.js"></script>
+<script src="../js/createAccount.js"></script>
