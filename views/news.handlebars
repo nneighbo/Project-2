@@ -6,9 +6,9 @@
                 <div class="input-group mb-3" id="searchBar">
                     <input type="text" class="form-control" placeholder="Search" autocomplete="none">
                     <div class="input-group-append" id="searchButton">
-                        <button id="navSearchButton" class="btn btn-outline-secondary" type="button" id="searchBorder">
+                        <a href="/search" id="navSearchButton" class="btn btn-outline-secondary" type="button" id="searchBorder">
                             <i class="material-icons">search</i>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="navMenuHeader">
@@ -22,42 +22,61 @@
                 </div>
             </div>
         </div>
+    {{!-- </div> --}}
 
-        <div class="col-md-6 pl-5" id="stockSide">
-            <div id="pageHeadRow" class="row">
-                <h1>News Articles</h1>
-                <div id="navDropDown">
-                    <p>Log in or Register</p>
-                </div>
-            </div>
-            <div id="logIn">
-                <div>
-                    <a id="loginLink" href="/login">Login</a>
-                    <a id="createAccountLink" href="/createAccount">Create Account</a>
-                    <a id="logoutLink" href="/logout">Logout</a>
-                </div>
-            </div>
-            <div class="newsArticle" id="art-one">
-                <h1 id="art-head-one"></h1>
-                <h6 id="art-source-one"></h6>
-                <p id="art-sum-one"></p>
-            </div>
-            <div class="newsArticle" id="art-two">
-                <h1 id="art-head-two"></h1>
-                <h6 id="art-source-two"></h6>
-                <p id="art-sum-two"></p>
-            </div>
-            <div class="newsArticle" id="art-three">
-                <h1 id="art-head-three"></h1>
-                <h6 id="art-source-three"></h6>
-                <p id="art-sum-three"></p>
+    <div class="col-md-6 pl-5" id="stockSide">
+        <div id="pageHeadRow" class="row">
+            <h1>News Articles</h1>
+            <div id="navDropDown">
+                <p>Log in or Register</p>
             </div>
         </div>
-        <div class="col-sm-2"></div>
+        <div id="logIn">
+            <div>
+                <a id="loginLink" href="/login">Login</a>
+                <a id="createAccountLink" href="/createAccount">Create Account</a>
+                <a id="logoutLink" href="/logout">Logout</a>
+            </div>
+        </div>
+        <div class="newsArticle" id="art-one">
+            <h1 id="art-head-one"></h1>
+            <h6 id="art-source-one"></h6>
+            <p id="art-sum-one"></p>
+        </div>
+        <div class="newsArticle" id="art-two">
+            <h1 id="art-head-two"></h1>
+            <h6 id="art-source-two"></h6>
+            <p id="art-sum-two"></p>
+        </div>
+        <div class="newsArticle" id="art-three">
+            <h1 id="art-head-three"></h1>
+            <h6 id="art-source-three"></h6>
+            <p id="art-sum-three"></p>
+        </div>
     </div>
-    <div class="push"></div>
+    <div class="col-sm-2"></div>
+</div>
+<div class="push"></div>
 </div>
 
 <footer>
     <p>Stocks and Info</p>
 </footer>
+
+<!-- Chart.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<!-- Popper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<!-- Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+<!-- Page Scripts -->
+<script src="../js/stock.js"></script>
+<script src="../js/news.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/navbar.js"></script>
