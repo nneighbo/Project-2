@@ -22,7 +22,7 @@
                 </div>
             </div>
         </div>
-    {{!-- </div> --}}
+        {{!-- </div> --}}
 
     <div class="col-md-6 pl-5" id="stockSide">
         <div id="pageHeadRow" class="row">
@@ -40,8 +40,15 @@
         </div>
         <div class="stockHolder">
             <div class="stock no-margin">
-                <p class="stockHead"></p>
-                <p class="stockSub"></p>
+                <div class="stockHeadContainer">
+                    <div class="stockHeadLeft">
+                        <p class="stockHead botOneHead">Ford</p>
+                        <p class="stockSub botOneSub">NRES: F</p>
+                    </div>
+                    <div class="stockHeadRight">
+                        <i class="material-icons star" data-toggle="unselected">star_border</i>
+                    </div>
+                </div>
                 <div class="stockDivider"></div>
                 <div>
                     <canvas id="bigChart" width="500" height="135"></canvas>
@@ -74,4 +81,5 @@
 <script src="../js/stock.js"></script>
 <script src="../js/dashboard.js"></script>
 <script src="../js/navbar.js"></script>
+<script src="../js/star.js"></script>
 <script src="../js/search.js"></script>

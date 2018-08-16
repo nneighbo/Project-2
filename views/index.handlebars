@@ -2,26 +2,26 @@
     <div class="row px-5 pt-2">
         <div class="col-sm-2"></div>
         <div class="col-sm-2">
-                <div id="sideContainer">
-                    <div class="input-group mb-3" id="searchBar">
-                        <input type="text" id="searchForm" class="form-control" placeholder="Search" autocomplete="none">
-                        <div class="input-group-append" id="searchButton">
-                            <a href="/search" id="navSearchButton"  class="btn btn-outline-secondary" type="button" id="searchBorder">
+            <div id="sideContainer">
+                <div class="input-group mb-3" id="searchBar">
+                    <input type="text" id="searchForm" class="form-control" placeholder="Search" autocomplete="none">
+                    <div class="input-group-append" id="searchButton">
+                        <a href="/search" id="navSearchButton" class="btn btn-outline-secondary" type="button" id="searchBorder">
                             <i class="material-icons">search</i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="navMenuHeader">
-                        <p>PAGES</p>
-                    </div>
-
-                    <div class="nav flex-column nav-pills">
-                        <a class="nav-link nav-active" href="/">Current Stocks</a>
-                        <a class="nav-link" href="/news">News Articles</a>
-                        <a class="nav-link" href="/dashboard">My Dashboard</a>
+                        </a>
                     </div>
                 </div>
+                <div class="navMenuHeader">
+                    <p>PAGES</p>
+                </div>
+
+                <div class="nav flex-column nav-pills">
+                    <a class="nav-link nav-active" href="/">Current Stocks</a>
+                    <a class="nav-link" href="/news">News Articles</a>
+                    <a class="nav-link" href="/dashboard">My Dashboard</a>
+                </div>
             </div>
+        </div>
 
 
         <div class="col-md-6 pl-5" id="stockSide">
@@ -42,8 +42,15 @@
                 <h1>High Stocks (up to 24 hours of delay)</h1>
                 <div class="highStocks">
                     <div class="stock">
-                        <p class="stockHead topOneHead"></p>
-                        <p class="stockSub topOneSub"></p>
+                        <div class="stockHeadContainer">
+                            <div class="stockHeadLeft">
+                                <p class="stockHead topOneHead"></p>
+                                <p class="stockSub topOneSub"></p>
+                            </div>
+                            <div class="stockHeadRight">
+                                <i class="material-icons star">star_border</i>
+                            </div>
+                        </div>
                         <div class="stockDivider"></div>
                         <div>
                             <canvas id="topThreeOne"></canvas>
@@ -51,8 +58,15 @@
                     </div>
 
                     <div class="stock">
-                        <p class="stockHead topTwoHead"></p>
-                        <p class="stockSub topTwoSub"></p>
+                        <div class="stockHeadContainer">
+                            <div class="stockHeadLeft">
+                                <p class="stockHead topTwoHead"></p>
+                                <p class="stockSub topTwoSub"></p>
+                            </div>
+                            <div class="stockHeadRight">
+                                <i class="material-icons star" data-toggle="unselected">star_border</i>
+                            </div>
+                        </div>
                         <div class="stockDivider"></div>
                         <div>
                             <canvas id="topThreeTwo"></canvas>
@@ -60,8 +74,15 @@
                     </div>
 
                     <div class="stock">
-                        <p class="stockHead topThreeHead"></p>
-                        <p class="stockSub topThreeSub"></p>
+                        <div class="stockHeadContainer">
+                            <div class="stockHeadLeft">
+                                <p class="stockHead topThreeHead"></p>
+                                <p class="stockSub topThreeSub"></p>
+                            </div>
+                            <div class="stockHeadRight">
+                                <i class="material-icons star" data-toggle="unselected">star_border</i>
+                            </div>
+                        </div>
                         <div class="stockDivider"></div>
                         <div>
                             <canvas id="topThreeThree"></canvas>
@@ -72,8 +93,15 @@
                 <h1>Low Stocks (up to 24 hours of delay)</h1>
                 <div id="lowStocks">
                     <div class="stock">
-                        <p class="stockHead botOneHead"></p>
-                        <p class="stockSub botOneSub"></p>
+                        <div class="stockHeadContainer">
+                            <div class="stockHeadLeft">
+                                <p class="stockHead botOneHead"></p>
+                                <p class="stockSub botOneSub"></p>
+                            </div>
+                            <div class="stockHeadRight">
+                                <i class="material-icons star" data-toggle="unselected">star_border</i>
+                            </div>
+                        </div>
                         <div class="stockDivider"></div>
                         <div>
                             <canvas id="botThreeOne"></canvas>
@@ -81,8 +109,15 @@
                     </div>
 
                     <div class="stock">
-                        <p class="stockHead botTwoHead"></p>
-                        <p class="stockSub botTwoSub"></p>
+                       <div class="stockHeadContainer">
+                            <div class="stockHeadLeft">
+                                <p class="stockHead botTwoHead"></p>
+                                <p class="stockSub botTwoSub"></p>
+                            </div>
+                            <div class="stockHeadRight">
+                                <i class="material-icons star" data-toggle="unselected">star_border</i>
+                            </div>
+                        </div>
                         <div class="stockDivider"></div>
                         <div>
                             <canvas id="botThreeTwo"></canvas>
@@ -90,8 +125,15 @@
                     </div>
 
                     <div class="stock">
-                        <p class="stockHead botThreeHead"></p>
-                        <p class="stockSub botThreeSub"></p>
+                        <div class="stockHeadContainer">
+                            <div class="stockHeadLeft">
+                                <p class="stockHead botThreeHead"></p>
+                                <p class="stockSub botThreeSub"></p>
+                            </div>
+                            <div class="stockHeadRight">
+                                <i class="material-icons star" data-toggle="unselected">star_border</i>
+                            </div>
+                        </div>
                         <div class="stockDivider"></div>
                         <div>
                             <canvas id="botThreeThree"></canvas>
@@ -125,6 +167,7 @@
 
 <!-- Page Scripts -->
 <script src="../js/stock.js"></script>
+<script src="../js/star.js"></script>
 <script src="../js/index.js"></script>
 <script src="../js/navbar.js"></script>
 <script src="../js/search.js"></script>
