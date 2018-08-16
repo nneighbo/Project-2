@@ -90,7 +90,6 @@ function runTopGraph() {
         var percent = 0;
         var finalPercent;
         for (p = 0; p < chart.length; p++) {
-            console.log(chart[p].changePercent);
             percent += chart[p].changePercent;
         }
         finalPercent = (percent / chart.length).toFixed(4);
@@ -107,11 +106,9 @@ function runTopGraph() {
         for (x = 0; x < chart.length; x++) {
             chartArr1.push(chart[x].close);
         }
-        console.log("1", days1, chartArr1)
         for (i = 0; i < chart.length; i++) {
             addData(topThreeOne, days1[i], chartArr1[i]);
         }
-        console.log("one", topThreeOne.data.datasets)
     }).catch(function (error) {
         if (error) throw error
     });
@@ -122,14 +119,12 @@ function runTopGraph() {
         var percent = 0;
         var finalPercent;
         for (p = 0; p < chart.length; p++) {
-            console.log(chart[p].changePercent);
             percent += chart[p].changePercent;
         }
         finalPercent = (percent / chart.length).toFixed(4);
         var quote = res.data.quote;
-        $(".topTwoHead").append(quote.companyName);
-        $(".topTwoSub").append(quote.symbol + " ^%" + finalPercent + " average over 5 days");
-        console.log(chart);
+        $(".topTwoHead").html(quote.companyName);
+        $(".topTwoSub").html(quote.symbol + " ^%" + finalPercent + " average over 5 days");
         let days = [
         ]
         for (y = 0; y < chart.length; y++) {
@@ -140,11 +135,9 @@ function runTopGraph() {
         for (x = 0; x < chart.length; x++) {
             chartArr.push(chart[x].close);
         }
-        console.log("2", days, chartArr);
         for (i = 0; i < chart.length; i++) {
             addData(topThreeTwo, days[i], chartArr[i]);
         }
-        console.log("two", topThreeTwo.data.datasets)
     }).catch(function (error) {
         if (error) throw error;
     });
@@ -154,14 +147,12 @@ function runTopGraph() {
         var percent = 0;
         var finalPercent;
         for (p = 0; p < chart.length; p++) {
-            console.log(chart[p].changePercent);
             percent += chart[p].changePercent;
         }
         finalPercent = (percent / chart.length).toFixed(4);
         var quote = res.data.quote;
         $(".topThreeHead").append(quote.companyName);
         $(".topThreeSub").append(quote.symbol + " ^%" + finalPercent + " average over 5 days");
-        console.log(chart);
         let days = [
         ]
         for (y = 0; y < chart.length; y++) {
@@ -172,11 +163,9 @@ function runTopGraph() {
         for (x = 0; x < chart.length; x++) {
             chartArr.push(chart[x].close);
         }
-        console.log("3", days, chartArr);
         for (i = 0; i < chart.length; i++) {
             addData(topThreeThree, days[i], chartArr[i]);
         }
-        console.log("three", topThreeThree.data.datasets)
     }).catch(function (error) {
         if (error) throw error
     });
