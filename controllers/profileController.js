@@ -15,18 +15,13 @@ var userStocks = [];
 var queryURL = "https://api.iextrading.com/1.0/stock/";
 var queryURL2 = "/batch?types=quote";
 
+
 var handleStocks = {
     handleProfile: []
 }
-
-console.log("============================", "==============================")
-
 router.get("/dashboard", isAuthenticated, function (req, res) {
-    console.log("test")
-    console.log("49328174823917412938074890123", req.user.id, "===================")
     if(req.user){
         addId = req.user.id;
-        console.log("here we go", addId)
         db.Stock.findAll({}).then(data =>{
             for(i = 0; i < data.length; i++){
                 if(addId === data[i].UserId){
